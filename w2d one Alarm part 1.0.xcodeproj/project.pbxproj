@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		1B799B1B201D25AF00A1AEDE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B799B1A201D25AF00A1AEDE /* AppDelegate.swift */; };
-		1B799B1D201D25AF00A1AEDE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B799B1C201D25AF00A1AEDE /* ViewController.swift */; };
 		1B799B20201D25AF00A1AEDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B799B1E201D25AF00A1AEDE /* Main.storyboard */; };
 		1B799B22201D25AF00A1AEDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B799B21201D25AF00A1AEDE /* Assets.xcassets */; };
 		1B799B25201D25AF00A1AEDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B799B23201D25AF00A1AEDE /* LaunchScreen.storyboard */; };
+		1B799B2F201D28B500A1AEDE /* AlarmListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B799B2E201D28B500A1AEDE /* AlarmListTableViewController.swift */; };
+		1B799B32201D29F300A1AEDE /* AlarmDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B799B31201D29F300A1AEDE /* AlarmDetailTableViewController.swift */; };
+		1B799B34201D2A6300A1AEDE /* SwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B799B33201D2A6300A1AEDE /* SwitchTableViewCell.swift */; };
+		1B799B36201D303C00A1AEDE /* Alarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B799B35201D303C00A1AEDE /* Alarm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B799B17201D25AF00A1AEDE /* w2d one Alarm part 1.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "w2d one Alarm part 1.0.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B799B1A201D25AF00A1AEDE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B799B1C201D25AF00A1AEDE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B799B1F201D25AF00A1AEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B799B21201D25AF00A1AEDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1B799B24201D25AF00A1AEDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B799B26201D25B000A1AEDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B799B2E201D28B500A1AEDE /* AlarmListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmListTableViewController.swift; sourceTree = "<group>"; };
+		1B799B31201D29F300A1AEDE /* AlarmDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmDetailTableViewController.swift; sourceTree = "<group>"; };
+		1B799B33201D2A6300A1AEDE /* SwitchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchTableViewCell.swift; sourceTree = "<group>"; };
+		1B799B35201D303C00A1AEDE /* Alarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alarm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		1B799B19201D25AF00A1AEDE /* w2d one Alarm part 1.0 */ = {
 			isa = PBXGroup;
 			children = (
+				1B799B37201D304700A1AEDE /* Model */,
+				1B799B2D201D286600A1AEDE /* UI */,
+				1B799B2C201D285400A1AEDE /* Resources */,
+			);
+			path = "w2d one Alarm part 1.0";
+			sourceTree = "<group>";
+		};
+		1B799B2C201D285400A1AEDE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
 				1B799B1A201D25AF00A1AEDE /* AppDelegate.swift */,
-				1B799B1C201D25AF00A1AEDE /* ViewController.swift */,
-				1B799B1E201D25AF00A1AEDE /* Main.storyboard */,
 				1B799B21201D25AF00A1AEDE /* Assets.xcassets */,
 				1B799B23201D25AF00A1AEDE /* LaunchScreen.storyboard */,
 				1B799B26201D25B000A1AEDE /* Info.plist */,
 			);
-			path = "w2d one Alarm part 1.0";
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1B799B2D201D286600A1AEDE /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1B799B1E201D25AF00A1AEDE /* Main.storyboard */,
+				1B799B30201D28BD00A1AEDE /* View Controller */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1B799B30201D28BD00A1AEDE /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1B799B31201D29F300A1AEDE /* AlarmDetailTableViewController.swift */,
+				1B799B2E201D28B500A1AEDE /* AlarmListTableViewController.swift */,
+				1B799B33201D2A6300A1AEDE /* SwitchTableViewCell.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
+		1B799B37201D304700A1AEDE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B799B35201D303C00A1AEDE /* Alarm.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +177,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B799B1D201D25AF00A1AEDE /* ViewController.swift in Sources */,
+				1B799B32201D29F300A1AEDE /* AlarmDetailTableViewController.swift in Sources */,
+				1B799B34201D2A6300A1AEDE /* SwitchTableViewCell.swift in Sources */,
+				1B799B36201D303C00A1AEDE /* Alarm.swift in Sources */,
 				1B799B1B201D25AF00A1AEDE /* AppDelegate.swift in Sources */,
+				1B799B2F201D28B500A1AEDE /* AlarmListTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,7 +319,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "w2d one Alarm part 1.0/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/w2d one Alarm part 1.0/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "flowers.w2d-one-Alarm-part-1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,7 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "w2d one Alarm part 1.0/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/w2d one Alarm part 1.0/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "flowers.w2d-one-Alarm-part-1-0";
 				PRODUCT_NAME = "$(TARGET_NAME)";
